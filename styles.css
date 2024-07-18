@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+:root{
+    --backgorund--:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)), transparent;;
+    --border--: 1px solid rgba(230, 230, 230, 0.557);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url(./assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 5vw;
+}
+
+nav img{
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.btn button{
+    background-color: #e50914;
+    font-size: 1rem;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+.btn .lang-btn{
+    background: var(--backgorund--);
+    border: var(--border--);
+    outline: #fff;
+    text-align: center;
+    margin-right: 15px;
+
+}
+
+.main-header{
+    color: white;
+    text-align: center;
+    display: flex;
+    padding: 0px 10vw;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: end;
+    position: relative;
+    bottom: 10vw;
+    
+
+}
+
+.main-header h1{
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+}
+.main-header h3{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.main-header p{
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.sign-up input{
+    flex-basis: 35vw;
+    margin-right: 10px;
+    background: transparent;
+    border: var(--border--);
+    border-radius: 3px;
+    padding: 0px 12px;
+    font-size: 1rem;
+    color: white;
+}
+::placeholder {
+    color: rgb(200, 195, 195);
+    font-weight: 600;
+  }
+
+  .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  
+.sign-up button{
+    width: 15vw;
+    font-size: 1.7vw;
+    text-align: center;
+    background-color: #e50914;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    padding: 12px 12px ;
+    font-weight: 600;
+}
+
+
+/* ---------features------------ */
+
+.features{
+    display: flex;
+    background-color: black;
+    color: white;
+    border-top: 8px solid #2d2d2d;
+    padding: 30px 10%;
+    overflow: hidden;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    flex-basis: 50%;
+    margin-bottom: 50px;
+}
+.left h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+.left p{
+    font-size: 1.5rem;
+}
+
+.right{
+    position: relative;
+}
+
+.right img{
+    width: 40vw;
+    z-index: 10;
+    position: relative;
+}
+
+.right video{
+    position: absolute;
+    width: 72%;
+    top: 21%;
+    left: 14%;
+    overflow: hidden;
+}
+
+.second-video video{
+    position: absolute;
+    width: 40vw;
+    top: 45px;
+    left: 95px;
+}
+
+.inside-img{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+    z-index: 20;
+    width: 68%;
+    bottom: 10%;
+    left: 15%;
+    border: 3px solid #2d2d2d;
+    padding: 10px 10px ;
+    border-radius: 12px;
+    }
+
+.inside-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.inside-img img{
+    width: 5vw;
+    margin-right: 10px;
+}
+
+.inside-text p{
+    color: #0071eb;
+}
+
+.downloading-video img{
+    margin-top: 10px;
+}
+.third-video{
+    position: absolute;
+    width: 92%;
+    top: 12%;
+    left: 3%;
+}
+
+
+
+/* ---------------faq-section---------- */
+
+.faq-section{
+    display: flex;
+    background-color: black;
+    color: white;
+    border-top: 8px solid #2d2d2d;
+    padding: 60px 10%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.faq-section h3{
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.faq-questions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 20px 25px;
+    font-size: 1.4rem;
+    background-color: #2d2d2d;
+    transition: background-color 0.4s ease ;
+}
+
+.faq-questions h3{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.faq-questions:hover{
+    cursor: pointer;
+    background-color: #454545;
+}
+
+.faq-signup p{
+    font-size: 1.4rem;
+    margin-block: 30px;
+}
+
+/* -------------footer-------------- */
+
+footer{
+    border-top: 8px solid #2d2d2d;
+    padding: 1% 17%;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.foot-links a li{
+    text-decoration: underline;
+    list-style: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+.foot-links ul{
+    display: flex;
+    flex-direction: column;
+    margin-block: 40px;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+}
+.foot-links ul{
+    gap: 10px;
+}
+
+.foot-p{
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.foot-p a{
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: underline;
+}
+.foot-p2{
+    padding-bottom: 100px;
+    margin-top: 20px;
+}
+
+footer .lang-btn{
+    background-color: black;
+    color: white;
+    border: var(--border--);
+    border-radius: 3px;
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
+/* ------------media-queries---------- */
+
+@media screen and (max-width:1024px) {
+    
+    .main-header {
+        bottom: 30vh;
+    }
+    .main-header h1{
+        font-size: 2.3rem;
+    }
+    .main-header h3{
+        font-size: 1.3rem;
+    }
+    .main-header p{
+        font-size: 1rem
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .sign-up input{
+        width: 40vw;
+    }
+    .sign-up button {
+        font-size: 1.2rem;
+        width: 22vw;
+    }
+    .features{
+        flex-direction: column;
+        text-align: center;
+    }
+    .features img{
+        width: 100%;
+    }
+    .inside-img{
+        justify-content: space-between;
+    }
+    .inside-img img{
+        width: 6vw;
+        margin-right: 10px;
+    }
+    .features .left{
+        margin-top: 20px;
+    }
+    .left h1{
+        font-size: 2.2rem;
+    }
+    .left p{
+        font-size: 1.2rem;
+    }
+    .faq-section{
+        padding: 60px 7%;
+    }
+    .faq-section h3{
+        font-size: 2rem;
+    }
+    .faq-questions{
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+    .faq-questions h3{
+        font-size: 1.2rem;
+        padding-top: 10px;
+        font-weight: 400;
+    }
+    .faq-questions svg{
+        width: 26px;
+        height: 26px;
+    }
+    .faq-signup p{
+        font-size: 1.2rem;
+    }
+    .responsive-input{
+        width: 105%;
+    }
+    footer{
+        padding: 1% 8%;
+    }
+    .footer-section{
+        width: 80vw;
+        flex-wrap: wrap;
+        margin-block: 30px;
+        
+    }
+    .foot-links ul{
+    margin-block: 5px;
+    gap: 15px;
+    }
+    .foot-links{
+        flex-basis: 50%;
+    }
+    nav{
+        padding: 5vw;
+        padding-bottom: 100px;
+    }
+    nav img{
+        width: 130px;
+    }
+}
+@media screen and (max-width:670px){
+    .sign-up{
+        flex-direction: column;
+    }
+    .sign-up input{
+        width: 90%;
+        margin-left: 4%;
+        flex-basis: 50px;
+    }
+    .sign-up button{
+        width: 40vw;
+        margin-top: 20px;
+        margin-left: 25%;
+    }
+}  
+
+@media screen and (max-width:436px){
+
+    :root{ 
+    h1{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem
+    }
+}
+
+.main-header {
+    margin-top: 15px;
+}
+    .sign-up button{
+        font-size: 4vw;
+        padding: 2vw 0vw;
+    }
+    .inside-img{
+        width: 65vw;
+        bottom: 7%;
+        left: 10%;
+        padding: 5px 5px;
+    }
+    .inside-img h3,p{
+        font-size: 0.8rem;
+    }
+    .inside-img img,video{
+    width: 9vw;
+    }
+
+    .faq-section h3{
+        font-size: 1.3rem;
+    }
+    .faq-questions h3{
+        font-size: 4vw;
+        font-weight: 500;
+    }
+    .faq-questions svg{
+        width: 6vw;
+    }
+    .footer-section{
+        width: 96vw;
+    }
+    footer .lang-btn{
+        font-size: 5vw;
+        padding: 5px 5px;
+    }
+}
