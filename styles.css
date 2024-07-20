@@ -104,8 +104,10 @@ nav img{
     border: var(--border--);
     border-radius: 3px;
     padding: 0px 12px;
+    padding-block: 19px;
     font-size: 1rem;
-    color: white;
+    color:white;
+    font-weight: 600;
 }
 ::placeholder {
     color: rgb(200, 195, 195);
@@ -495,3 +497,16 @@ footer .lang-btn{
         padding: 5px 5px;
     }
 }
+
+
+
+.sign-up input::placeholder {
+    position: relative; 
+    top: 0px;
+    transition: all 0.3s;
+    transition-timing-function: ease-out;
+}
+.sign-up input:focus::placeholder {
+    top: -19px; 
+    font-size: 0.8rem;
+} 
